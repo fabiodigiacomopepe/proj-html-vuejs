@@ -80,6 +80,24 @@ export default {
                 <div><span class="simbolo"><i class="fa-regular fa-circle-check"></i></span> Work with any team</div>
             </div>
         </section>
+
+        <section class="build_tools">
+            <div class="left-side">
+                <h3>Build tools and<br>extensive documention</h3>
+                <div class="description">You can combine all the Landrick templates into a single one, you can take a
+                    component from the Application theme and use it in the Website.</div>
+                <ul>
+                    <li><i class="fa-regular fa-circle-check"></i> Digital Marketing Solutions for Tomorrow</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Our Talented & Experienced Marketing Agency</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Create you own skin to match your brand</li>
+                </ul>
+                <div><a href="#" class="read_more">Read More <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+
+            <div class="right-side">
+                <img src="./../assets/img/1.png" alt="grafico">
+            </div>
+        </section>
     </main>
 </template>
 
@@ -90,7 +108,6 @@ export default {
 main {
     width: 70%;
     margin: 0 auto;
-    min-height: 800px;
     margin-top: 70px;
 
     .key_features {
@@ -184,7 +201,7 @@ main {
     }
 
     .quickstart {
-        width: 70%;
+        width: 65%;
         margin: 80px auto 0;
 
         .description {
@@ -203,7 +220,7 @@ main {
             div {
                 @include description;
                 font-size: 11px;
-                width: 75%;
+                width: 90%;
                 margin: 0 auto;
 
                 a {
@@ -244,7 +261,7 @@ main {
                 font-weight: bold;
                 color: #7d8b9f;
                 margin-top: 10px;
-                font-size: 12px;
+                font-size: 11px;
 
                 .simbolo {
                     color: #2ebf86;
@@ -257,13 +274,76 @@ main {
             gap: 40px;
             color: #7d8b9f;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 11px;
             margin-top: 20px;
 
             .simbolo {
                 color: #2ebf86;
                 font-size: 14px;
                 margin-right: 5px;
+            }
+        }
+    }
+
+    .build_tools {
+        margin-top: 110px;
+        display: flex;
+        justify-content: space-around;
+
+        .left-side {
+            width: 55%;
+
+            h3 {
+                font-size: 22px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .description {
+                width: 95%;
+                font-size: 11px;
+                line-height: 1.6;
+                font-weight: 600;
+                color: #7d8b9f;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                color: #7d8b9f;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+
+                i {
+                    font-size: 14px;
+                    margin-right: 5px;
+                    color: $colore_primario;
+                }
+            }
+
+            .read_more {
+                background-color: $colore_primario;
+                color: white;
+                font-weight: 600;
+                font-size: 12px;
+                padding: 10px 15px;
+                border-radius: 5px;
+
+                i {
+                    margin-left: 5px
+                }
+            }
+        }
+
+        .right-side {
+            width: 40%;
+
+            img {
+                max-width: 100%;
+                margin-left: 10px;
+                position: relative;
+                bottom: 20px;
             }
         }
     }
