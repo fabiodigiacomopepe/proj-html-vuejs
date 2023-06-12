@@ -32,6 +32,62 @@ export default {
                 <a href="#"><i class="fa-regular fa-user"></i></a>
             </div>
         </nav>
+
+        <section class="jumbotron">
+            <div class="left-side">
+                <div class="tag">Development</div>
+                <h1>A Complete <br>
+                    Developer Toolset
+                </h1>
+                <div class="description">
+                    Launch your campaign and benefit from our expertise on designing and managing conversion centered
+                    bootstrap4
+                    html page.
+                </div>
+                <div class="button">
+                    <div class="blue-button">
+                        <a href="#">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="white-button">
+                        <a href="#">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+                <div class="description version">
+                    Current Version: v.2.6.0
+                </div>
+            </div>
+
+            <div class="right-side">
+                <img src="./../assets/img/about.png" alt="about">
+            </div>
+        </section>
+
+        <section class="partner">
+            <div>
+                <a href="#">
+                    <img src="./../assets/img/amazon.svg" alt="amazon">
+                </a>
+                <a href="#">
+                    <img src="./../assets/img/google.svg" alt="google">
+                </a>
+                <a href="#">
+                    <img src="./../assets/img/lenovo.svg" alt="lenovo">
+                </a>
+                <a href="#">
+                    <img src="./../assets/img/paypal.svg" alt="paypal">
+                </a>
+                <a href="#">
+                    <img src="./../assets/img/shopify.svg" alt="shopify">
+                </a>
+                <a href="#">
+                    <img src="./../assets/img/spotify.svg" alt="spotify">
+                </a>
+            </div>
+        </section>
     </header>
 </template>
 
@@ -62,7 +118,8 @@ header {
         ul {
             display: flex;
             gap: 25px;
-            font-weight: 500;
+            font-size: 12px;
+            font-weight: bold;
 
             .navActive {
                 color: #355ad5;
@@ -92,7 +149,7 @@ header {
                 background-color: #e4e9f8;
                 padding: 10px;
                 border-radius: 5px;
-                border: 1px solid #d8e0f6;
+                border: 1px solid #bccdfc;
             }
 
             .fa-user {
@@ -107,6 +164,100 @@ header {
             }
         }
 
+    }
+
+    .jumbotron {
+        width: 70%;
+        margin: 120px auto 60px;
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-side {
+            width: 60%;
+
+            .tag {
+                color: #355ad5;
+                background-color: #e4e9f8;
+                border: 1px solid #bccdfc;
+                padding: 5px 8px;
+                border-radius: 15px;
+                width: max-content;
+                font-weight: bold;
+                font-size: 10px;
+            }
+
+            h1 {
+                padding: 10px 0;
+                font-size: 35px;
+                line-height: 1.6;
+            }
+
+            .description {
+                color: #8996aa;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .button {
+                display: flex;
+                gap: 15px;
+                font-weight: 600;
+                padding: 20px 0;
+                font-size: 14px;
+
+                .blue-button {
+                    background-color: #2f55d4;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                .white-button {
+                    background-color: white;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    border: 1.5px solid #2f55d4;
+
+                    a {
+                        color: #2f55d4;
+                    }
+                }
+            }
+
+            .version {
+                font-size: 12px;
+            }
+        }
+
+        .right-side {
+            width: 40%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .partner {
+        border-top: 1px solid rgb(235, 235, 235);
+
+        div {
+            width: 65%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0 20px;
+        }
+
+        img {
+            width: 60px;
+        }
     }
 }
 </style>
