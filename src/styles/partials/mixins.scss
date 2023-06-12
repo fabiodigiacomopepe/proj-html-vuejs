@@ -1,0 +1,15 @@
+@use './variables.scss' as *;
+
+@mixin icone_quadrate {
+    color: $colore_primario;
+    background-color: #e4e9f8;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bccdfc;
+}
+
+@mixin description {
+    color: #8996aa;
+    font-weight: 600;
+    line-height: 1.6;
+}

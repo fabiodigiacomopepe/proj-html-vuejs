@@ -48,8 +48,7 @@ export default {
                 </h1>
                 <div class="description">
                     Launch your campaign and benefit from our expertise on designing and managing conversion centered
-                    bootstrap4
-                    html page.
+                    bootstrap4 html page.
                 </div>
                 <div class="button">
                     <div class="blue-button">
@@ -117,7 +116,7 @@ header {
         border-radius: 15px;
 
         a {
-            color: #2f55d4;
+            color: $colore_primario;
         }
     }
 
@@ -143,7 +142,7 @@ header {
             font-weight: bold;
 
             .navActive {
-                color: #355ad5;
+                color: $colore_primario;
             }
 
             span {
@@ -166,11 +165,7 @@ header {
 
             .fa-brands,
             .fa-regular {
-                color: #3a5ed5;
-                background-color: #e4e9f8;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid #bccdfc;
+                @include icone_quadrate;
             }
 
             .fa-user {
@@ -180,7 +175,7 @@ header {
 
             .fa-brands:hover,
             .fa-regular:hover {
-                background-color: #2f55d4;
+                background-color: $colore_primario;
                 color: white;
             }
         }
@@ -199,7 +194,7 @@ header {
             width: 60%;
 
             .tag {
-                color: #355ad5;
+                color: $colore_primario;
                 background-color: #e4e9f8;
                 border: 1px solid #bccdfc;
                 padding: 5px 8px;
@@ -216,10 +211,8 @@ header {
             }
 
             .description {
-                color: #8996aa;
-                font-weight: 600;
+                @include description;
                 font-size: 14px;
-                line-height: 1.6;
             }
 
             .button {
@@ -230,7 +223,7 @@ header {
                 font-size: 14px;
 
                 .blue-button {
-                    background-color: #2f55d4;
+                    background-color: $colore_primario;
                     padding: 10px 15px;
                     border-radius: 5px;
 
@@ -243,10 +236,10 @@ header {
                     background-color: white;
                     padding: 10px 15px;
                     border-radius: 5px;
-                    border: 1.5px solid #2f55d4;
+                    border: 1.5px solid $colore_primario;
 
                     a {
-                        color: #2f55d4;
+                        color: $colore_primario;
                     }
                 }
             }
