@@ -10,7 +10,10 @@ export default {
 <template>
     <header>
         <div class="setting">
-            <i class="fa-solid fa-gear"></i>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+            </a>
+
         </div>
 
         <nav>
@@ -110,9 +113,12 @@ header {
         left: -10px;
         top: 100px;
         background-color: white;
-        color: #2f55d4;
         padding: 5px 5px 5px 15px;
         border-radius: 15px;
+
+        a {
+            color: #2f55d4;
+        }
     }
 
     nav {
