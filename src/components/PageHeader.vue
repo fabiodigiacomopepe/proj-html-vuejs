@@ -128,7 +128,7 @@ header {
         align-items: center;
 
         .logo {
-            width: 130px;
+            width: 125px;
 
             img {
                 max-width: 100%;
@@ -156,7 +156,7 @@ header {
         .icon {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 5px;
 
             .fa-magnifying-glass {
                 color: #8e9bad;
@@ -170,7 +170,7 @@ header {
 
             .fa-user {
                 font-size: 12px;
-                padding: 12px;
+                padding: 10px;
             }
 
             .fa-brands:hover,
@@ -191,7 +191,7 @@ header {
         align-items: center;
 
         .left-side {
-            width: 60%;
+            width: 55%;
 
             .tag {
                 color: $colore_primario;
@@ -206,13 +206,13 @@ header {
 
             h1 {
                 padding: 10px 0;
-                font-size: 35px;
+                font-size: 30px;
                 line-height: 1.6;
             }
 
             .description {
                 @include description;
-                font-size: 14px;
+                font-size: 12px;
             }
 
             .button {
@@ -220,7 +220,7 @@ header {
                 gap: 15px;
                 font-weight: 600;
                 padding: 20px 0;
-                font-size: 14px;
+                font-size: 12px;
 
                 .blue-button {
                     background-color: $colore_primario;
@@ -245,12 +245,13 @@ header {
             }
 
             .version {
-                font-size: 12px;
+                font-size: 11px;
             }
         }
 
         .right-side {
-            width: 40%;
+            width: 45%;
+            margin-right: 35px;
 
             img {
                 max-width: 100%;

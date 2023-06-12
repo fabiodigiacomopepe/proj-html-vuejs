@@ -126,6 +126,8 @@ main {
 
                 .icone {
                     @include icone_quadrate;
+                    font-size: 20px;
+                    padding: 16px;
                     margin-bottom: 20px
                 }
 
