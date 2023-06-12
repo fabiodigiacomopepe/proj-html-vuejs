@@ -1,10 +1,14 @@
 <script>
 export default {
-  name: "AppHelloWorld",
+    name: "PageHeader",
 }
 </script>
 
-<template></template>
+<template>
+    <header>
+
+    </header>
+</template>
 
 <style scoped lang="scss">
 @use '../styles/partials/variables.scss' as *;

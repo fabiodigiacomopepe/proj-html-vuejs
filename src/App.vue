@@ -1,12 +1,14 @@
 <script>
 import { store } from './store.js'
-/* import axios from 'axios'       // SE HO INSTALLATO AXIOS */
-import AppHelloWorld from './components/AppHelloWorld.vue'
-
+import PageHeader from './components/PageHeader.vue'
+import PageMain from './components/PageMain.vue'
+import PageFooter from './components/PageFooter.vue'
 
 export default {
   components: {
-    AppHelloWorld,
+    PageHeader,
+    PageMain,
+    PageFooter,
   },
   data() {
     return {
@@ -23,7 +25,9 @@ export default {
 </script>
 
 <template>
-  <AppHelloWorld />
+  <PageHeader />
+  <PageMain />
+  <PageFooter />
 </template>
 
 <style lang="scss">
