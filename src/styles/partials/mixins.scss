@@ -13,3 +13,14 @@
     font-weight: 600;
     line-height: 1.6;
 }
+
+@mixin tag {
+    color: $colore_primario;
+    background-color: #e4e9f8;
+    border: 1px solid #bccdfc;
+    padding: 5px 8px;
+    border-radius: 15px;
+    width: max-content;
+    font-weight: bold;
+    font-size: 10px;
+}

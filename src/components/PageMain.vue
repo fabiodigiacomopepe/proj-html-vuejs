@@ -98,6 +98,65 @@ export default {
                 <img src="./../assets/img/1.png" alt="grafico">
             </div>
         </section>
+
+        <section class="price">
+            <div class="title_description">
+                <h3>Our rates for developer from landrick team</h3>
+                <div class="description">Start working with <span>Landrick</span> that can provide everything you need to
+                    generate awareness, drive traffic, connect.
+                </div>
+            </div>
+
+            <div class="card_container">
+                <div class="single_card">
+                    <h5>Basic</h5>
+                    <h2>$9.00</h2>
+                    <div class="duration">Per Month</div>
+                    <div class="description_price">All the basics for businesses that are just getting started.</div>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Full Access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Source Files</li>
+                        <li><i class="fa-regular fa-circle-check"></i> 1 Domain Free</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
+                    </ul>
+                    <div><a href="#">Buy Now</a></div>
+                    <div>*No credit card required</div>
+                </div>
+
+                <div class="single_card">
+                    <h5>Business</h5>
+                    <h2>$39.00</h2>
+                    <div class="duration">Per Month</div>
+                    <div class="description_price">Better for growing businesses that want more customers.</div>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Full Access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Source Files</li>
+                        <li><i class="fa-regular fa-circle-check"></i> 1 Domain Free</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
+                    </ul>
+                    <div><a href="#">Buy Now</a></div>
+                    <div>*No credit card required</div>
+                </div>
+
+                <div class="single_card">
+                    <h5>Enterprise</h5>
+                    <h2>$79.00</h2>
+                    <div class="duration">Per Month</div>
+                    <div class="description_price">Advanced features for pros who need more customization.</div>
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> Full Access</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Source Files</li>
+                        <li><i class="fa-regular fa-circle-check"></i> 1 Domain Free</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
+                    </ul>
+                    <div><a href="#">Buy Now</a></div>
+                    <div>*No credit card required</div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -116,6 +175,7 @@ main {
                 font-size: 22px;
                 font-weight: 600;
                 margin-bottom: 20px;
+                color: #161c2d;
             }
 
             div {
@@ -140,6 +200,7 @@ main {
                 border-radius: 5px;
                 padding: 20px;
                 position: relative;
+                color: #161c2d;
 
                 .icone {
                     @include icone_quadrate;
@@ -215,6 +276,7 @@ main {
             h3 {
                 font-size: 22px;
                 margin-bottom: 20px;
+                color: #161c2d;
             }
 
             div {
@@ -297,6 +359,7 @@ main {
                 font-size: 22px;
                 line-height: 1.6;
                 margin-bottom: 20px;
+                color: #161c2d;
             }
 
             .description {
@@ -311,7 +374,7 @@ main {
             ul {
                 color: #7d8b9f;
                 font-weight: 600;
-                font-size: 12px;
+                font-size: 11px;
                 line-height: 1.6;
                 margin-bottom: 20px;
 
@@ -334,6 +397,10 @@ main {
                     margin-left: 5px
                 }
             }
+
+            .read_more:hover {
+                background-color: #2443ac;
+            }
         }
 
         .right-side {
@@ -344,6 +411,105 @@ main {
                 margin-left: 10px;
                 position: relative;
                 bottom: 20px;
+            }
+        }
+    }
+
+    .price {
+        text-align: center;
+
+        .title_description {
+            margin-top: 35px;
+
+            h3 {
+                color: #161c2d;
+                font-size: 21px;
+                margin-bottom: 30px;
+            }
+
+            .description {
+                font-size: 11px;
+                line-height: 1.6;
+                width: 55%;
+                margin: 0 auto 50px;
+                font-weight: bold;
+                color: #7d8b9f;
+
+                span {
+                    color: $colore_primario;
+                }
+            }
+        }
+
+        .card_container {
+            display: flex;
+            gap: 20px;
+            text-align: left;
+
+            .single_card {
+                width: calc(100% / 3);
+                border: 1px solid #dfe0e2;
+                padding: 20px;
+                border-radius: 8px;
+                color: #7d8b9f;
+                font-weight: 600;
+                font-size: 11px;
+
+                h5 {
+                    @include tag;
+                    padding: 10px 20px;
+                    font-size: 11px;
+                    border-radius: 20px;
+                    margin-bottom: 10px;
+                }
+
+                h2 {
+                    font-size: 26px;
+                    margin-bottom: 8px;
+                    color: #161c2d;
+                }
+
+                .duration {
+                    margin-bottom: 10px;
+                }
+
+                .description_price {
+                    border-bottom: 1px solid #dfe0e2;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                }
+
+                ul {
+                    font-size: 12px;
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+
+                    .fa-circle-check {
+                        color: $colore_primario;
+                        margin-right: 5px;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    background-color: $colore_primario;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 12px;
+                    padding: 10px 0;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                }
+
+                a:hover {
+                    background-color: #2443ac;
+                }
+            }
+
+            .single_card:hover {
+                scale: 1.05;
             }
         }
     }

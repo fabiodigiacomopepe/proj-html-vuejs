@@ -141,6 +141,10 @@ header {
             font-size: 12px;
             font-weight: bold;
 
+            a {
+                color: #5c6675;
+            }
+
             .navActive {
                 color: $colore_primario;
             }
@@ -194,20 +198,14 @@ header {
             width: 55%;
 
             .tag {
-                color: $colore_primario;
-                background-color: #e4e9f8;
-                border: 1px solid #bccdfc;
-                padding: 5px 8px;
-                border-radius: 15px;
-                width: max-content;
-                font-weight: bold;
-                font-size: 10px;
+                @include tag;
             }
 
             h1 {
                 padding: 10px 0;
                 font-size: 30px;
                 line-height: 1.6;
+                color: #161c2d;
             }
 
             .description {
