@@ -170,6 +170,7 @@ header {
             .fa-brands,
             .fa-regular {
                 @include icone_quadrate;
+                box-shadow: 0 1px #c6d1f2;
             }
 
             .fa-user {

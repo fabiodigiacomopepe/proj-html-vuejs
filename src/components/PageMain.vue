@@ -138,6 +138,9 @@ export default {
                     </ul>
                     <div><a href="#">Buy Now</a></div>
                     <div>*No credit card required</div>
+                    <div class="best_price">
+                        <img src="./../assets/img/best_price.png" alt="best">
+                    </div>
                 </div>
 
                 <div class="single_card">
@@ -445,6 +448,7 @@ main {
             display: flex;
             gap: 20px;
             text-align: left;
+            margin-bottom: 50px;
 
             .single_card {
                 width: calc(100% / 3);
@@ -454,6 +458,8 @@ main {
                 color: #7d8b9f;
                 font-weight: 600;
                 font-size: 11px;
+                position: relative;
+                box-shadow: 0 2px rgb(170, 170, 170);
 
                 h5 {
                     @include tag;
@@ -506,10 +512,22 @@ main {
                 a:hover {
                     background-color: #2443ac;
                 }
+
+                .best_price {
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+                    width: 60px;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
             }
 
             .single_card:hover {
                 scale: 1.05;
+                box-shadow: 0 2px #2443ac;
             }
         }
     }
