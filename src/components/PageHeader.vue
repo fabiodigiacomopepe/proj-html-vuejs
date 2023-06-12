@@ -9,6 +9,10 @@ export default {
 
 <template>
     <header>
+        <div class="setting">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+
         <nav>
             <div class="logo">
                 <a href="#">
@@ -99,6 +103,17 @@ header {
     background-color: #f8f9fc;
     width: 100%;
     padding: 10px 0;
+    position: relative;
+
+    .setting {
+        position: absolute;
+        left: -10px;
+        top: 100px;
+        background-color: white;
+        color: #2f55d4;
+        padding: 5px 5px 5px 15px;
+        border-radius: 15px;
+    }
 
     nav {
         width: 70%;
