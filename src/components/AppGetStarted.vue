@@ -58,7 +58,7 @@ export default {
 
         input {
             width: 100%;
-            padding: 15px;
+            padding: 15px 120px 15px 15px;
             margin-bottom: 90px;
             border: 1px solid #c0c5cb;
             border-radius: 30px;
