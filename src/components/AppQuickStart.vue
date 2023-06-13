@@ -1,6 +1,25 @@
 <script>
 export default {
     name: "AppQuickStart",
+    data() {
+        return {
+            metodoAttivo: 0,
+            metodiInstall: [
+                {
+                    name: "npm"
+                },
+                {
+                    name: "nuget"
+                },
+                {
+                    name: "spm"
+                },
+                {
+                    name: "github"
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -15,10 +34,10 @@ export default {
 
         <div class="install_method">
             <ul>
-                <li class="active">npm</li>
-                <li>nuget</li>
-                <li>spm</li>
-                <li>github</li>
+                <li v-for="(metodoInstall, index) in metodiInstall" :key="index" @click="metodoAttivo = index"
+                    :class="(metodoAttivo == index) ? 'active' : ''">
+                    {{ metodoInstall.name }}
+                </li>
             </ul>
             <div class="code">
                 <span><span class="simbolo">$</span> npm install </span>
