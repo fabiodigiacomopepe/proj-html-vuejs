@@ -4,6 +4,11 @@ export default {
     props: {
         vociCompany: Array,
         vociUsefullLinks: Array
+    },
+    methods: {
+        goToTheTop() {
+            scroll(0, 0)
+        }
     }
 }
 </script>
@@ -65,7 +70,7 @@ export default {
         </div>
 
         <div class="down_section">
-            <div class="top"><i class="fa-solid fa-arrow-up"></i></div>
+            <div class="top" @click="goToTheTop()"><i class="fa-solid fa-arrow-up"></i></div>
             <section>
                 <div>
                     <i class="fa-regular fa-copyright"></i> 2020 Landrick. Dedsign with <span> &hearts;</span> by
