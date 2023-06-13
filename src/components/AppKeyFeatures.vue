@@ -3,7 +3,29 @@ export default {
     name: "AppKeyFeatures",
     data() {
         return {
-            hover: ""
+            hover: "",
+            cards: [
+                {
+                    icon: "fa-solid fa-layer-group",
+                    name: "Modular",
+                    description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                },
+                {
+                    icon: "fa-solid fa-display",
+                    name: "Responsive",
+                    description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                },
+                {
+                    icon: "fa-solid fa-location-crosshairs",
+                    name: "Customizable",
+                    description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                },
+                {
+                    icon: "fa-solid fa-maximize",
+                    name: "Scalable",
+                    description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                },
+            ]
         }
     }
 }
@@ -19,36 +41,13 @@ export default {
         </div>
 
         <div class="card_container">
-            <div class="single_card" @mouseover="hover = 1" @mouseleave="hover = 0">
-                <a href="#"><i class="fa-solid fa-layer-group icone"></i></a>
-                <h5>Modular</h5>
-                <div class="description">Composed in a pseudo-Latin language which more or less corresponds.</div>
+            <div v-for="(card, index) in cards" :key="index" class="single_card" @mouseover="hover = index + 1"
+                @mouseleave="hover = 0">
+                <i :class="`${card.icon} icone`"></i>
+                <h5>{{ card.name }}</h5>
+                <div class="description">{{ card.description }}</div>
                 <div><a href="#" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
-                <div v-if="hover == 1" class="icona_sfondo_hover"><i class="fa-solid fa-layer-group"></i></div>
-            </div>
-
-            <div class="single_card" @mouseover="hover = 2" @mouseleave="hover = 0">
-                <a href="#"><i class="fa-solid fa-display icone"></i></a>
-                <h5>Responsive</h5>
-                <div class="description">Composed in a pseudo-Latin language which more or less corresponds.</div>
-                <div><a href="#" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
-                <div v-if="hover == 2" class="icona_sfondo_hover"><i class="fa-solid fa-display"></i></div>
-            </div>
-
-            <div class="single_card" @mouseover="hover = 3" @mouseleave="hover = 0">
-                <a href="#"><i class="fa-solid fa-location-crosshairs icone"></i></a>
-                <h5>Customizable</h5>
-                <div class="description">Composed in a pseudo-Latin language which more or less corresponds.</div>
-                <div><a href="#" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
-                <div v-if="hover == 3" class="icona_sfondo_hover"><i class="fa-solid fa-location-crosshairs"></i></div>
-            </div>
-
-            <div class="single_card" @mouseover="hover = 4" @mouseleave="hover = 0">
-                <a href="#"><i class="fa-solid fa-maximize icone"></i></a>
-                <h5>Scalable</h5>
-                <div class="description">Composed in a pseudo-Latin language which more or less corresponds.</div>
-                <div><a href="#" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
-                <div v-if="hover == 4" class="icona_sfondo_hover"><i class="fa-solid fa-maximize"></i></div>
+                <div v-if="hover == index + 1" class="icona_sfondo_hover"><i :class="card.icon"></i></div>
             </div>
         </div>
     </section>

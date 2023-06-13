@@ -1,29 +1,50 @@
 <script>
 export default {
     name: "AppPartner",
+    data() {
+        return {
+            partners: [
+                {
+                    name: "amazon",
+                    url: "#",
+                    src: "./src/assets/img/amazon.svg"
+                },
+                {
+                    name: "google",
+                    url: "#",
+                    src: "./src/assets/img/google.svg"
+                },
+                {
+                    name: "lenovo",
+                    url: "#",
+                    src: "./src/assets/img/lenovo.svg"
+                },
+                {
+                    name: "paypal",
+                    url: "#",
+                    src: "./src/assets/img/paypal.svg"
+                },
+                {
+                    name: "shopify",
+                    url: "#",
+                    src: "./src/assets/img/shopify.svg"
+                },
+                {
+                    name: "spotify",
+                    url: "#",
+                    src: "./src/assets/img/spotify.svg"
+                },
+            ]
+        }
+    }
 }
 </script>
 
 <template>
     <section class="partner">
         <div>
-            <a href="#">
-                <img src="./../assets/img/amazon.svg" alt="amazon">
-            </a>
-            <a href="#">
-                <img src="./../assets/img/google.svg" alt="google">
-            </a>
-            <a href="#">
-                <img src="./../assets/img/lenovo.svg" alt="lenovo">
-            </a>
-            <a href="#">
-                <img src="./../assets/img/paypal.svg" alt="paypal">
-            </a>
-            <a href="#">
-                <img src="./../assets/img/shopify.svg" alt="shopify">
-            </a>
-            <a href="#">
-                <img src="./../assets/img/spotify.svg" alt="spotify">
+            <a v-for="(partner, index) in partners" :href="partner.url" :key="index">
+                <img :src="partner.src" :alt="partner.name">
             </a>
         </div>
     </section>

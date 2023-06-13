@@ -1,6 +1,32 @@
 <script>
 export default {
     name: "AppPrice",
+    data() {
+        return {
+            hover: "",
+            cards: [
+                {
+                    tag: "Basic",
+                    price: "$9.00",
+                    description: "All the basics for businesses that are just getting started.",
+                    bestprice: false
+                },
+                {
+                    tag: "Business",
+                    price: "$39.00",
+                    description: "Better for growing businesses that want more customers.",
+                    bestprice: true
+                },
+                {
+                    tag: "Enterprise",
+                    price: "$79.00",
+                    description: "Advanced features for pros who need more customization.",
+                    bestprice: false
+
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -14,11 +40,11 @@ export default {
         </div>
 
         <div class="card_container">
-            <div class="single_card">
-                <h5>Basic</h5>
-                <h2>$9.00</h2>
+            <div class="single_card" v-for="(card, index) in cards" :key="index">
+                <h5>{{ card.tag }}</h5>
+                <h2>{{ card.price }}</h2>
                 <div class="duration">Per Month</div>
-                <div class="description_price">All the basics for businesses that are just getting started.</div>
+                <div class="description_price">{{ card.description }}</div>
                 <ul>
                     <li><i class="fa-regular fa-circle-check"></i> Full Access</li>
                     <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
@@ -28,41 +54,9 @@ export default {
                 </ul>
                 <div><a href="#">Buy Now</a></div>
                 <div>*No credit card required</div>
-            </div>
-
-            <div class="single_card">
-                <h5>Business</h5>
-                <h2>$39.00</h2>
-                <div class="duration">Per Month</div>
-                <div class="description_price">Better for growing businesses that want more customers.</div>
-                <ul>
-                    <li><i class="fa-regular fa-circle-check"></i> Full Access</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Source Files</li>
-                    <li><i class="fa-regular fa-circle-check"></i> 1 Domain Free</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
-                </ul>
-                <div><a href="#">Buy Now</a></div>
-                <div>*No credit card required</div>
-                <div class="best_price">
+                <div class="best_price" v-if="card.bestprice">
                     <img src="./../assets/img/best_price.png" alt="best">
                 </div>
-            </div>
-
-            <div class="single_card">
-                <h5>Enterprise</h5>
-                <h2>$79.00</h2>
-                <div class="duration">Per Month</div>
-                <div class="description_price">Advanced features for pros who need more customization.</div>
-                <ul>
-                    <li><i class="fa-regular fa-circle-check"></i> Full Access</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Source Files</li>
-                    <li><i class="fa-regular fa-circle-check"></i> 1 Domain Free</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Enchanced Security</li>
-                </ul>
-                <div><a href="#">Buy Now</a></div>
-                <div>*No credit card required</div>
             </div>
         </div>
     </section>
