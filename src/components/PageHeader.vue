@@ -214,29 +214,49 @@ header {
 
             .button {
                 display: flex;
-                gap: 15px;
+                gap: 10px;
                 font-weight: 600;
-                padding: 20px 0;
+                margin: 20px 0;
                 font-size: 12px;
+                height: 35px;
 
                 .blue-button {
                     background-color: $colore_primario;
-                    padding: 10px 15px;
                     border-radius: 5px;
 
                     a {
+                        display: inline-block;
                         color: white;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 18px;
+                        border-radius: 5px;
+                    }
+
+                    a:hover {
+                        background-color: #2443ac;
                     }
                 }
 
                 .white-button {
                     background-color: white;
-                    padding: 10px 15px;
                     border-radius: 5px;
                     border: 1.5px solid $colore_primario;
 
                     a {
+                        display: inline-block;
                         color: $colore_primario;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 12px;
+                        border-radius: 5px;
+                    }
+
+                    a:hover {
+                        background-color: #f6f8fa;
+                        color: #1b1919;
                     }
                 }
             }
@@ -271,4 +291,5 @@ header {
             width: 60px;
         }
     }
-}</style>
+}
+</style>
