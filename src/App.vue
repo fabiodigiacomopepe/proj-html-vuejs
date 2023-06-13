@@ -38,6 +38,75 @@ export default {
           active: false,
           dropdown: true
         },
+      ],
+      company: [
+        {
+          name: "About us",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Services",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Team",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Pricing",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Project",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Careers",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Blog",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Login",
+          url: "#",
+          active: false,
+        },
+      ],
+      usefullLinks: [
+        {
+          name: "Terms of Services",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Privacy Policy",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Documentation",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Changelog",
+          url: "#",
+          active: false,
+        },
+        {
+          name: "Components",
+          url: "#",
+          active: false,
+        }
       ]
     }
   },
@@ -53,7 +122,7 @@ export default {
 <template>
   <PageHeader :vociMenuHeader="menuHeader" />
   <PageMain />
-  <PageFooter />
+  <PageFooter :vociCompany="company" :vociUsefullLinks="usefullLinks" />
 </template>
 
 <style lang="scss">

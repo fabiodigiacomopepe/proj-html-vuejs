@@ -24,12 +24,10 @@ export default {
             </div>
 
             <ul>
-                <li v-for="voceMenu in vociMenuHeader">
-                    <a :href="voceMenu.url" :class="(voceMenu.active) ? 'navActive' : ''">{{ voceMenu.name.toUpperCase()
-                    }}</a>
-                    <span v-if="voceMenu.dropdown" :class="(voceMenu.active) ? 'navActive' : ''"><i
-                            class="fa-solid fa-chevron-down"></i></span>
-                </li>
+                <li v-for="(voceMenu, index) in vociMenuHeader" :key="index"><a :href="voceMenu.url"
+                        :class="(voceMenu.active) ? 'navActive' : ''">{{ voceMenu.name.toUpperCase() }}</a><span
+                        v-if="voceMenu.dropdown" :class="(voceMenu.active) ? 'navActive' : ''"><i
+                            class="fa-solid fa-chevron-down"></i></span></li>
             </ul>
 
             <div class="icon">
@@ -273,5 +271,4 @@ header {
             width: 60px;
         }
     }
-}
-</style>
+}</style>

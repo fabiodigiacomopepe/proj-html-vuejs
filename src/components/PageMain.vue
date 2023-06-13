@@ -580,7 +580,7 @@ main {
             input {
                 width: 100%;
                 padding: 15px;
-                margin-bottom: 30px;
+                margin-bottom: 90px;
                 border: 1px solid #c0c5cb;
                 border-radius: 30px;
 
