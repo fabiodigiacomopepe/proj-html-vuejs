@@ -3,6 +3,11 @@ export default {
     name: "AppNavBar",
     props: {
         vociMenuHeaderOnPageHeader: Array
+    },
+    data() {
+        return {
+            itemAttivoNav: "1"
+        }
     }
 }
 </script>
@@ -16,10 +21,14 @@ export default {
         </div>
 
         <ul>
-            <li v-for="(voceMenu, index) in vociMenuHeaderOnPageHeader" :key="index"><a :href="voceMenu.url"
-                    :class="(voceMenu.active) ? 'navActive' : ''">{{ voceMenu.name.toUpperCase() }}</a><span
-                    v-if="voceMenu.dropdown" :class="(voceMenu.active) ? 'navActive' : ''"><i
-                        class="fa-solid fa-chevron-down"></i></span></li>
+            <li v-for="(voceMenu, index) in vociMenuHeaderOnPageHeader" :key="index">
+                <a :href="voceMenu.url" :class="(itemAttivoNav == index) ? 'navActive' : ''" @click="itemAttivoNav = index">
+                    {{ voceMenu.name.toUpperCase() }}
+                    <span v-if="voceMenu.dropdown">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+            </li>
         </ul>
 
         <div class="icon">
@@ -58,6 +67,10 @@ nav {
 
         a {
             color: #5c6675;
+        }
+
+        a:hover {
+            color: $colore_primario;
         }
 
         .navActive {

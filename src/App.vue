@@ -36,25 +36,21 @@ export default {
         {
           name: "home",
           url: "#",
-          active: false,
           dropdown: false
         },
         {
           name: "landing",
           url: "#",
-          active: true,
           dropdown: true
         },
         {
           name: "pages",
           url: "#",
-          active: false,
           dropdown: true
         },
         {
           name: "docs",
           url: "#",
-          active: false,
           dropdown: true
         },
       ],

@@ -9,21 +9,25 @@ export default {
                     icon: "fa-solid fa-layer-group",
                     name: "Modular",
                     description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                    url: "#"
                 },
                 {
                     icon: "fa-solid fa-display",
                     name: "Responsive",
                     description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                    url: "#"
                 },
                 {
                     icon: "fa-solid fa-location-crosshairs",
                     name: "Customizable",
                     description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                    url: "#"
                 },
                 {
                     icon: "fa-solid fa-maximize",
                     name: "Scalable",
                     description: "Composed in a pseudo-Latin language which more or less corresponds.",
+                    url: "#"
                 },
             ]
         }
@@ -46,7 +50,7 @@ export default {
                 <i :class="`${card.icon} icone`"></i>
                 <h5>{{ card.name }}</h5>
                 <div class="description">{{ card.description }}</div>
-                <div><a href="#" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
+                <div><a :href="card.url" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
                 <div v-if="hover == index + 1" class="icona_sfondo_hover"><i :class="card.icon"></i></div>
             </div>
         </div>
