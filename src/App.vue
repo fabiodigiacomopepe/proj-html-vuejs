@@ -1,13 +1,32 @@
 <script>
 import { store } from './store.js'
+
 import PageHeader from './components/PageHeader.vue'
+import AppNavBar from './components/AppNavBar.vue'
+import AppJumbotron from './components/AppJumbotron.vue'
+import AppPartner from "./components/AppPartner.vue"
+
 import PageMain from './components/PageMain.vue'
+import AppKeyFeatures from './components/AppKeyFeatures.vue';
+import AppQuickStart from './components/AppQuickStart.vue';
+import AppBuildTools from './components/AppBuildTools.vue';
+import AppPrice from './components/AppPrice.vue';
+import AppGetStarted from './components/AppGetStarted.vue';
+
 import PageFooter from './components/PageFooter.vue'
 
 export default {
   components: {
     PageHeader,
+    AppNavBar,
+    AppJumbotron,
+    AppPartner,
     PageMain,
+    AppKeyFeatures,
+    AppQuickStart,
+    AppBuildTools,
+    AppPrice,
+    AppGetStarted,
     PageFooter,
   },
   data() {
@@ -120,8 +139,14 @@ export default {
 </script>
 
 <template>
-  <PageHeader :vociMenuHeader="menuHeader" />
-  <PageMain />
+  <header>
+    <PageHeader :vociMenuHeader="menuHeader" />
+  </header>
+
+  <main>
+    <PageMain />
+  </main>
+
   <PageFooter :vociCompany="company" :vociUsefullLinks="usefullLinks" />
 </template>
 
