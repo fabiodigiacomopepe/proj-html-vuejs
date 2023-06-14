@@ -3,7 +3,7 @@ export default {
     name: "AppKeyFeatures",
     data() {
         return {
-            hover: "",
+            hover: "-1",
             cards: [
                 {
                     icon: "fa-solid fa-layer-group",
@@ -45,13 +45,13 @@ export default {
         </div>
 
         <div class="card_container">
-            <div v-for="(card, index) in cards" :key="index" class="single_card" @mouseover="hover = index + 1"
-                @mouseleave="hover = 0">
+            <div v-for="(card, index) in cards" :key="index" class="single_card" @mouseover="hover = index"
+                @mouseleave="hover = -1">
                 <i :class="`${card.icon} icone`"></i>
                 <h5>{{ card.name }}</h5>
                 <div class="description">{{ card.description }}</div>
                 <div><a :href="card.url" class="read_more">Read More <i class="fa-solid fa-chevron-right"></i></a></div>
-                <div v-if="hover == index + 1" class="icona_sfondo_hover"><i :class="card.icon"></i></div>
+                <div v-if="hover == index" class="icona_sfondo_hover"><i :class="card.icon"></i></div>
             </div>
         </div>
     </section>
