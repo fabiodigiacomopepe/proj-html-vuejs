@@ -208,22 +208,25 @@ footer {
                         font-size: 14px;
                     }
 
-                    input {
-                        background-color: #27314f;
-                        border: none;
+                    form {
                         width: 100%;
-                        margin-left: 2px;
-                        overflow-x: auto;
-                        color: white;
 
-                        &::placeholder {
-                            color: #a0a8b1;
-                            opacity: 1;
-                            font-weight: 600;
-                            font-size: 10px;
+                        input {
+                            background-color: #27314f;
+                            border: none;
+                            width: 100%;
+                            margin-left: 2px;
+                            overflow-x: auto;
+                            color: white;
 
+                            &::placeholder {
+                                color: #a0a8b1;
+                                opacity: 1;
+                                font-weight: 600;
+                                font-size: 10px;
+
+                            }
                         }
-
                     }
                 }
 
