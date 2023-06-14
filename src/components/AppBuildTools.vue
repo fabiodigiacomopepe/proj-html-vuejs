@@ -59,6 +59,10 @@ export default {
             line-height: 1.6;
             margin-bottom: 20px;
 
+            li {
+                margin-bottom: 5px;
+            }
+
             i {
                 font-size: 14px;
                 margin-right: 5px;
