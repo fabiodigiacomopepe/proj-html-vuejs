@@ -67,10 +67,10 @@ nav {
 
         a {
             color: #5c6675;
-        }
 
-        a:hover {
-            color: $colore_primario;
+            &:hover {
+                color: $colore_primario;
+            }
         }
 
         .navActive {
@@ -99,17 +99,16 @@ nav {
         .fa-regular {
             @include icone_quadrate;
             box-shadow: 0 1px #c6d1f2;
+
+            &:hover {
+                background-color: $colore_primario;
+                color: white;
+            }
         }
 
         .fa-user {
             font-size: 12px;
             padding: 10px;
-        }
-
-        .fa-brands:hover,
-        .fa-regular:hover {
-            background-color: $colore_primario;
-            color: white;
         }
     }
 

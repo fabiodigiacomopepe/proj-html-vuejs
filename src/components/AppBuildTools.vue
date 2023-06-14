@@ -77,10 +77,10 @@ export default {
             i {
                 margin-left: 5px
             }
-        }
 
-        .read_more:hover {
-            background-color: #2443ac;
+            &:hover {
+                background-color: #2443ac;
+            }
         }
     }
 

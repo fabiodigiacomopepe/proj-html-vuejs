@@ -116,13 +116,13 @@ export default {
                 .fa-chevron-right {
                     font-size: 10px;
                 }
-            }
 
-            .read_more:hover {
-                background-color: #2443ac;
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
+                &:hover {
+                    background-color: #2443ac;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
             }
 
             .icona_sfondo_hover {
@@ -144,11 +144,11 @@ export default {
                     overflow: hidden;
                 }
             }
-        }
 
-        .single_card:hover {
-            position: relative;
-            bottom: 10px;
+            &:hover {
+                position: relative;
+                bottom: 10px;
+            }
         }
     }
 }

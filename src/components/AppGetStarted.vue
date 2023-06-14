@@ -76,11 +76,11 @@ export default {
             color: white;
             font-weight: bold;
             border: none;
-        }
 
-        button:hover {
-            cursor: pointer;
-            background-color: #2443ac;
+            &:hover {
+                cursor: pointer;
+                background-color: #2443ac;
+            }
         }
     }
 }

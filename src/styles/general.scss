@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 

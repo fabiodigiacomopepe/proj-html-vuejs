@@ -154,10 +154,10 @@ export default {
                 padding: 10px 0;
                 border-radius: 5px;
                 margin-bottom: 10px;
-            }
 
-            a:hover {
-                background-color: #2443ac;
+                &:hover {
+                    background-color: #2443ac;
+                }
             }
 
             .best_price {
@@ -170,11 +170,11 @@ export default {
                     max-width: 100%;
                 }
             }
-        }
 
-        .single_card:hover {
-            scale: 1.05;
-            box-shadow: 0 2px #2443ac;
+            &:hover {
+                scale: 1.05;
+                box-shadow: 0 2px #2443ac;
+            }
         }
     }
 }

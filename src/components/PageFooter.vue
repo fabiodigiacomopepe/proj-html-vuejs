@@ -55,9 +55,9 @@ export default {
                     <div class="description">Sign up and receive the latest tips via email.</div>
                     <div class="write_email">Write your email <span>*</span></div>
                     <div class="input_email">
-                        <i class="fa-regular fa-envelope"></i> Your email:
+                        <i class="fa-regular fa-envelope"></i>
                         <form action="#">
-                            <input type="email">
+                            <input type="email" placeholder="Your email:">
                         </form>
                     </div>
                     <div class="subscribe">
@@ -134,10 +134,11 @@ footer {
                     height: 30px;
                     text-align: center;
                     line-height: 30px;
-                }
 
-                i:hover {
-                    background-color: #030334;
+                    &:hover {
+                        background-color: #b2b7c5;
+                        color: rgb(49, 48, 48);
+                    }
                 }
             }
 
@@ -161,6 +162,10 @@ footer {
 
                     a {
                         color: #a0a8b1;
+
+                        &:hover {
+                            color: rgb(223, 224, 247);
+                        }
                     }
 
                     i {
@@ -206,10 +211,18 @@ footer {
                     input {
                         background-color: #27314f;
                         border: none;
-                        width: 80px;
-                        margin-left: 5px;
+                        width: 100%;
+                        margin-left: 2px;
                         overflow-x: auto;
                         color: white;
+
+                        &::placeholder {
+                            color: #a0a8b1;
+                            opacity: 1;
+                            font-weight: 600;
+                            font-size: 10px;
+
+                        }
 
                     }
                 }
@@ -227,11 +240,11 @@ footer {
                         font-weight: 600;
                         border: none;
                         cursor: pointer;
-                    }
 
-                    button:hover {
-                        background-color: #2b3962;
-                        color: #d3cccc;
+                        &:hover {
+                            background-color: #2b3962;
+                            color: #d3cccc;
+                        }
                     }
                 }
             }
@@ -256,11 +269,11 @@ footer {
             line-height: 30px;
             height: 30px;
             border-radius: 5px;
-        }
 
-        .top:hover {
-            background-color: #8895bd;
-            color: black;
+            &:hover {
+                background-color: #8895bd;
+                color: black;
+            }
         }
 
         section {

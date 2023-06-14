@@ -89,10 +89,10 @@ export default {
                     align-items: center;
                     padding: 0 18px;
                     border-radius: 5px;
-                }
 
-                a:hover {
-                    background-color: #2443ac;
+                    &:hover {
+                        background-color: #2443ac;
+                    }
                 }
             }
 
@@ -109,11 +109,11 @@ export default {
                     align-items: center;
                     padding: 0 12px;
                     border-radius: 5px;
-                }
 
-                a:hover {
-                    background-color: #f6f8fa;
-                    color: #1b1919;
+                    &:hover {
+                        background-color: #f6f8fa;
+                        color: #1b1919;
+                    }
                 }
             }
         }
